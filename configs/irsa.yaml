@@ -1,0 +1,8 @@
+roles:
+- app_name: anyiamrolename
+  policy:
+  - allowed_actions:
+    - s3:GetObject
+    - secretsmanager:GetSecretValue
+    resources:
+    - "*"

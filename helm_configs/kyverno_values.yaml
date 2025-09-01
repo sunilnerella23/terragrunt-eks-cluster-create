@@ -1,0 +1,44 @@
+global:
+  nodeSelector:
+    kyverno: "true"
+  tolerations:
+  - key: "kyverno"
+    operator: "Equal"
+    value: "true"
+    effect: "NoSchedule"
+
+backgroundController:
+  nodeSelector:
+    kyverno: "true"
+  tolerations:
+  - key: "kyverno"
+    operator: "Equal"
+    value: "true"
+    effect: "NoSchedule"
+
+cleanupController:
+  nodeSelector:
+    kyverno: "true"
+  tolerations:
+  - key: "kyverno"
+    operator: "Equal"
+    value: "true"
+    effect: "NoSchedule"
+
+reportsController:
+  nodeSelector:
+    kyverno: "true"
+  tolerations:
+  - key: "kyverno"
+    operator: "Equal"
+    value: "true"
+    effect: "NoSchedule"
+
+admissionController:
+  nodeSelector:
+    kyverno: "true"
+  tolerations:
+  - key: "kyverno"
+    operator: "Equal"
+    value: "true"
+    effect: "NoSchedule"
